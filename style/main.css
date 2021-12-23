@@ -1,0 +1,195 @@
+/* //////////////////MAIN */
+
+main{
+    background-image: linear-gradient(to bottom, 
+    rgba(155, 110, 175, 0.705),
+     rgba(155, 110, 175, 0.685),
+      rgba(155, 110, 175, 0.575),
+       rgba(155, 110, 175, 0.404),
+        hsla(282, 29%, 56%, 0.329),
+         hsla(282, 29%, 56%, 0.267),
+          hsla(282, 29%, 56%, 0.281),
+           hsla(282, 29%, 56%, 0.342),
+            hsla(282, 29%, 56%, 0.438),
+             hsla(282, 29%, 56%, 0.616),
+              hsla(282, 29%, 56%, 0.63),
+               rgba(155, 110, 175, 0.658));
+               
+  }
+
+  main .heading-2{
+      text-align: center;
+      color: #fff;
+      padding: 20rem 0 10rem 0;
+      font-size: 7rem;
+  }
+
+
+/* ///////////////////////////GALLERY */
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    margin: 2rem auto;
+    width: 400px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #efa947;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: #9a6daf;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #efa947;
+    background-color: #9a6daf;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #9a6daf;
+    padding: 2px 16px;
+    color: #efa947;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+.about{
+    padding: 10rem 0;
+}
+
+.about-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin: 0 auto;
+}
+
+.about-header{
+    color: #333;
+}
+.about-header h2{
+
+    color: #333;
+}
+.about-text{
+   
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.about-subsection{
+    display: flex;
+    gap: 5rem;
+}
+
+.about-subsection-text{
+    color: #333;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.about-subsection-text p{
+    margin-bottom: 3rem;
+}
+
+.heading-3{
+    font-size: 3.6rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.about-subsection-img{
+    flex: 0 0 50%;
+}
+.about-subsection-img img{
+    width: 90%;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.384);
+}
+
+.abput-subsection_2{
+
+}
+
+.about-subsection-3{
+
+}
+
+.subsection-list{
+    list-style: none;
+}
+
+.subsection-list-item{
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    width: 90%;
+
+}
+
+
+
