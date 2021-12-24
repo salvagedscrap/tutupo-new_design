@@ -1,8 +1,8 @@
 @import url(./header.css);
 @import url(./main.css);
 @import url(./footer.css);
-@import url(./media.css);
 @import url(./font.css);
+@import url(./media.css);
 
 
 *{
@@ -13,7 +13,28 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     font-family: mfont, sans-serif;
+    scroll-padding-top: 10rem;
+    position: relative;
+}
+@media (max-width:900px){
+    html{
+        font-size: 55%;
+    }
+
+}
+@media (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+    
+}
+@media (max-width:500px){
+    html{
+        font-size: 48%;
+    }
+    
 }

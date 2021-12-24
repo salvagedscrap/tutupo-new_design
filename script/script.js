@@ -31,3 +31,57 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 } 
+
+
+//STICK NAV THAT CHANGES COLOR ON SCROLL
+
+const ul = document.querySelector('.nav-ul')
+window.addEventListener('scroll', fixNav)
+
+function fixNav(){
+    if(window.scrollY>ul.offsetHeight +50){
+        ul.classList.add('navscroll')
+    }else{
+        ul.classList.remove('navscroll')
+    }
+}
+//SCROLLSPY
+
+let section= document. querySelectorAll('.section');
+let navLinks= document.querySelectorAll('.navitemlink');
+
+window.onscroll = () => {
+    section.forEach(sec =>{
+
+        let top = window.scrollY;
+        let offset= sec.offsetTop;
+        let height= sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top < offset + height){
+
+            navLinks.forEach(links =>{
+                links.classList.remove('hoveractive');
+
+                document.querySelector('.navitemlink[href*=' + id + ']').classList.add('hoveractive')
+            })
+        }    
+    })
+}
+
+
+
+// NAV
+const toggle = document.getElementById('toggle');
+const nav = document.getElementById('nav');
+
+const line1=document.querySelector('.line-1')
+const line2=document.querySelector('.line-2')
+
+toggle.addEventListener('click', function(){
+  nav.classList.toggle('navactive')
+  line1.classList.toggle('line-1active')
+  line2.classList.toggle('line-2active')
+	})
+
+

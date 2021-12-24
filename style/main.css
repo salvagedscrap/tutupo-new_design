@@ -116,7 +116,9 @@ main{
 
 
 .about{
-    padding: 10rem 0;
+    padding: 0 0 10rem 0;
+    /* margin-top: -25rem;
+    padding-top: -10rem; */
 }
 
 .about-container{
@@ -191,5 +193,33 @@ main{
 
 }
 
+@media (max-width:900px){
+    
 
+  
+  }
+  @media (max-width:600px){
+    .about-subsection{
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+     
+  }
+  .about-subsection-img img{
+    width: 100%;
+}
+
+
+.about-subsection_3 .about-subsection-img,
+.about-subsection_1 .about-subsection-img{
+  order: -1;
+
+}
+  
+      
+  }
+  @media (max-width:500px){
+     
+      
+  }
 

@@ -32,3 +32,13 @@ gap: 10rem;
 .footer-nav-item a:hover{
     color: #9a6daf;
 }
+
+
+@media (max-width:600px){
+    .footer-nav ul{
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+        }
+      
+  }
