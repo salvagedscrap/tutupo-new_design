@@ -86,8 +86,8 @@ img:hover{
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.575);
-  z-index: 0;
+  background: rgba(239, 169, 71, 0.3);
+  z-index: 50;
 }
 
 #mkLightboxContainer #mklbInner {

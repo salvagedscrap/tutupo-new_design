@@ -44,6 +44,12 @@ function _mklbOpen(mklbItem) {
 
   document.body.appendChild(lightboxContainer);
   overlay.addEventListener('click', _closeLightbox)
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      _closeLightbox()
+    }
+
+  })
 }
 
 function _mklbAddImage(item) {
@@ -124,7 +130,22 @@ function _mklbAddGallery(currentItem) {
 nextContainer.addEventListener('click', function() {
   _mklbSlide(false);
   _mklbStopAutoGallery();
+
+  
 });
+document.addEventListener('keydown', function(e){
+
+  // console.log(e.key)
+    
+  if(e.key === 'ArrowRight'){
+    _mklbSlide(true)
+  } else if(e.key === 'ArrowLeft'){
+    _mklbSlide(false)
+  }
+  
+})
+
+// overlay.addEventListener('click',  _closeLightbox)
 
 if(auto > 0) {
   _mklbSetAutoGallery();
@@ -242,3 +263,5 @@ toggle.addEventListener('click', function(){
 	})
 
 
+
+  // console.log(object);
