@@ -133,24 +133,23 @@ nextContainer.addEventListener('click', function() {
 
   
 });
-document.addEventListener('keydown', function(e){
 
-  // console.log(e.key)
-    
-  if(e.key === 'ArrowRight'){
-    _mklbSlide(true)
-  } else if(e.key === 'ArrowLeft'){
-    _mklbSlide(false)
-  }
-  
-})
 
-// overlay.addEventListener('click',  _closeLightbox)
+
 
 if(auto > 0) {
   _mklbSetAutoGallery();
 }
 }
+document.addEventListener('keydown', function(e){
+
+  switch (e.key){
+    case 'ArrowLeft': _mklbSlide(true)
+    break;
+    case 'ArrowRight' : _mklbSlide(false)
+    break
+  }
+})
 
 function _closeLightbox() {
   document.getElementById('mkLightboxContainer').remove();
@@ -253,6 +252,7 @@ window.onscroll = () => {
 const toggle = document.getElementById('toggle');
 const nav = document.getElementById('nav');
 
+
 const line1=document.querySelector('.line-1')
 const line2=document.querySelector('.line-2')
 
@@ -262,6 +262,16 @@ toggle.addEventListener('click', function(){
   line2.classList.toggle('line-2active')
 	})
 
+const navItem = document.querySelectorAll('.nav-item')
+
+for(let i = 0; i<navItem.length; i++){
+  navItem[i].addEventListener('click', function(){
+    nav.classList.remove('navactive')
+    line1.classList.toggle('line-1active')
+    line2.classList.toggle('line-2active')
+
+  })
+}
 
 
   // console.log(object);
